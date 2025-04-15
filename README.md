@@ -19,15 +19,14 @@ Welcome to **Playwrightcraft** — an end-to-end testing project built with **Pl
 ```bash
 git clone https://github.com/zeeshan-ilyas01/playwrightcraft.git
 cd playwrightcraft
-
- ### 2. Install Dependencies
+```
+### 2. Install Dependencies
 ```bash
-Copy
-Edit
 npm install
 
+```
 ### 3. Install Playwright Browsers
-
+```
 npx playwright install
 
 
@@ -36,22 +35,22 @@ Run All Tests
 bash
 
 npx playwright test
-
+``
 
 Run Tests in a Specific Browser
-bash
+```bash
 
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
+```
 
 
-
-Run Tests in Headed Mode (visible browser window)
-bash
+### .4 Run Tests in Headed Mode (visible browser window)
+```bash
 
 npx playwright test --headed
-
+```
 
 
 playwrightcraft/
