@@ -51,7 +51,7 @@ npx playwright test --project=webkit
 
 npx playwright test --headed
 ```
-
+```
 
 playwrightcraft/
 │
@@ -61,7 +61,19 @@ playwrightcraft/
 ├── playwright.config.js   # Playwright test configuration
 ├── package.json           # Project dependencies and scripts
 ├── README.md              # Project documentation
+``
 
+
+###  websites used for testing
+https://demo.applitools.com
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+
+commands and their purposes
+import {test, expect} from '@playwright/test'
+this imports test and expect module from playwright library
+await page.pause()
+this will pause the project open the record a test.
 
 
 ✍️ Author:
