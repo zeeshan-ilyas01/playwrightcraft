@@ -21,15 +21,15 @@ git clone https://github.com/zeeshan-ilyas01/playwrightcraft.git
 cd playwrightcraft
 
  ### 2. Install Dependencies
-bash
+```bash
 Copy
 Edit
 npm install
 
-###3. Install Playwright Browsers
-bash
+### 3. Install Playwright Browsers
 
 npx playwright install
+
 
 🚀 Running Tests
 Run All Tests
