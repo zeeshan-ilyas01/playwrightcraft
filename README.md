@@ -79,7 +79,7 @@ await context.close();
 It closes the entire browser context, which includes all the pages/tabs opened within it.
 Close all tabs and clean up everything for this browser profile."
 
-
+viewportSize() for screen size
 ✍️ Author:
 Zeeshan
 Passionate about modern, scalable test automation.
