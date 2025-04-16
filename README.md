@@ -68,6 +68,7 @@ playwrightcraft/
 https://demo.applitools.com
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 commands and their purposes
 import {test, expect} from '@playwright/test'
