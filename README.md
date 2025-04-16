@@ -75,6 +75,10 @@ this imports test and expect module from playwright library
 await page.pause()
 this will pause the project open the record a test.
 
+await context.close();
+It closes the entire browser context, which includes all the pages/tabs opened within it.
+Close all tabs and clean up everything for this browser profile."
+
 
 ✍️ Author:
 Zeeshan
