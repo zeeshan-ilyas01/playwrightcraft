@@ -24,7 +24,7 @@ test("Keyboard activities2", async ({ page }) => {
 
 
 
-test("Keyboard activities2", async ({ page }) => {
+test("Keyboard activitiecs2", async ({ page }) => {
 
 
     await page.goto("https://www.google.com")
