@@ -70,6 +70,10 @@ https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
+upload file link for testing
+https://the-internet.herokuapp.com/upload  
+
+
 commands and their purposes
 import {test, expect} from '@playwright/test'
 this imports test and expect module from playwright library
