@@ -1,0 +1,13 @@
+{
+    "username": "Admin@test.com",
+    "password": "admin@123",
+    "name": "Test Engineer",
+    "interest": "Java",
+    "gender": "m",
+    "state": "Pk",
+    "address": {
+        "area": "hsr",
+        "city": "acd",
+        "pincode": 12312
+    }
+}
