@@ -52,6 +52,18 @@ npx playwright test --project=webkit
 npx playwright test --headed
 ```
 ```
+```
+### .4 Allure reports
+```
+npm install -D allure-playwright
+npx playwright test --reporter=line,allure-playwright
+```
+# View the report
+```
+allure generate ./allure-results -o ./allure-report
+```
+
+### .Other
 
 playwrightcraft/
 │
@@ -71,13 +83,12 @@ https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 https://freelance-learn-automation.vercel.app/login
 
-upload file link for testing
 https://the-internet.herokuapp.com/upload  
 https://the-internet.herokuapp.com/
 https://docs.oracle.com/javase/8/docs/api/
 
-commands and their purposes
-import {test, expect} from '@playwright/test'
+## commands 
+ import {test, expect} from '@playwright/test' 
 this imports test and expect module from playwright library
 await page.pause()
 this will pause the project open the record a test.
