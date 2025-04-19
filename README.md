@@ -53,18 +53,18 @@ npx playwright test --headed
 ```
 ```
 ```
-### .4 Allure reports
+### .5 Allure reports
 ```
 npm install -D allure-playwright
 npx playwright test --reporter=line,allure-playwright
 ```
-# View the report
+### .6 View the report
 ```
 allure generate ./allure-results -o ./allure-report
 ```
 
 ### .Other
-
+``
 playwrightcraft/
 │
 ├── tests/                 # All test files
@@ -76,7 +76,7 @@ playwrightcraft/
 ``
 
 
-###  websites used for testing
+###  Websites used for testing
 https://demo.applitools.com
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
