@@ -1,0 +1,41 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login with codegen 
+- Location: D:\QA\Playwrightcraft\tests\codegen.spec.js:3:1
+
+# Error details
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Username' })
+
+    at D:\QA\Playwrightcraft\tests\codegen.spec.js:4:55
+```
+
+# Test source
+
+```ts
+   1 | import {test,expect} from '@playwright/test'
+   2 |
+   3 | test('Login with codegen ', async({page})=>{
+>  4 | await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
+     |                                                       ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+   5 |
+   6 | await page.getByRole('textbox', { name: 'Username' }).fill('Admin');
+   7 | await page.getByRole('textbox', { name: 'Username' }).press('Tab');
+   8 | await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
+   9 | await page.getByRole('button', { name: 'Login' }).click();
+  10 | await page.getByRole('listitem').filter({ hasText: 'Sanuri Sarath' }).locator('i').click();
+  11 | await page.getByRole('banner').getByRole('img', { name: 'profile picture' }).click();
+  12 | await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
+  13 | await page.getByRole('listitem').filter({ hasText: 'Sanuri Sarath' }).locator('i').click();
+  14 | await page.getByRole('menuitem', { name: 'Logout' }).click();
+  15 | })
+```
