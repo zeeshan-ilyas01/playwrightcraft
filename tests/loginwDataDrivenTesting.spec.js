@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test'
-const testdata = JSON.parse(JSON.stringify(require("../logintestdata.json")))
+import testdata from'../logintestdata.json'
+//using import -- error was showing with below statement. usage of require as it doesn't supporst type module.
+//const testdata = JSON.parse(JSON.stringify(require("../logintestdata.json")))
 
 test.describe("Data driven login Test",function(){
 

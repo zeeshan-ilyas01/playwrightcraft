@@ -87,7 +87,15 @@ https://the-internet.herokuapp.com/upload
 https://the-internet.herokuapp.com/
 https://docs.oracle.com/javase/8/docs/api/
 
-## commands 
+## commands and statements
+
+To execute specific file 
+```npx playwright test tests/codegen.spec.js
+```
+For headed mode
+```
+```npx playwright test tests/Filename.spec.js --headed
+```
  import {test, expect} from '@playwright/test' 
 this imports test and expect module from playwright library
 await page.pause()
@@ -102,6 +110,49 @@ Close all tabs and clean up everything for this browser profile."
 viewportSize() for screen size
 
 retry can be used for sigle and group of tests.
+
+
+
+### Page Object Model
+ important concepts before implement POM 
+ class
+ constructors
+ methods
+
+
+### pages
+```
+export default login{
+     constructor(page) {
+
+        this.page = page
+        this.username="#email1"
+     }
+     async loginToAppliatio() {
+
+        await this.page.fill(this.username, "admin@email.com")
+      
+    }
+
+}
+```
+export default makes importing cleaner and more intuitive:
+
+
+
+### main
+```
+import { test, expect } from '@playwright/test'
+import LoginPageclass from '../../pages/loginpage.js'
+const login = new LoginPageclass(page)
+test('loging with POM', async ({ page }) => {
+    await page.goto('https://freelance-learn-automation.vercel.app/login')
+    await login.loginToAppliatio()
+    })
+
+```
+
+
 ✍️ Author:
 Zeeshan
 Passionate about modern, scalable test automation.

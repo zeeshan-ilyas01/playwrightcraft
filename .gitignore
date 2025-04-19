@@ -7,3 +7,5 @@ node_modules/
 /playwright/.cache/
 /tests-examples
 /tests-examples
+/allure-results
+/upload
