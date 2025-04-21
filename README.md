@@ -46,25 +46,52 @@ npx playwright test --project=webkit
 ```
 
 
-### .4 Run Tests in Headed Mode (visible browser window)
-```bash
+### 4. Run Tests in Headed Mode (visible browser window)
+```
 
 npx playwright test --headed
 ```
-```
-```
+
 ### .5 Allure reports
 ```
 npm install -D allure-playwright
 npx playwright test --reporter=line,allure-playwright
 ```
+
+
+Allure Report with Playwright [Screenshots, Videos & Traces]
+Step1: Install Allure Report command-line tool
+
+npm install -g --save-dev allure-commandline
+Step2: Install the Allure Playwright adapter.
+
+npm install --save-dev allure-playwright
+Step3: Add below config in playwright.config.js file.
+
+reporter:[
+['html'],
+['allure-playwright']
+],
+Step4: Run Playwright tests.
+
+npx playwright test
+Step5: Generate Allure Report
+
+npx allure serve allure-results
+or
+
+allure generate allure-results --clean
+allure open
+
+
+
 ### .6 View the report
 ```
 allure generate ./allure-results -o ./allure-report
 ```
 
 ### .Other
-``
+
 playwrightcraft/
 │
 ├── tests/                 # All test files
@@ -73,19 +100,10 @@ playwrightcraft/
 ├── playwright.config.js   # Playwright test configuration
 ├── package.json           # Project dependencies and scripts
 ├── README.md              # Project documentation
-``
 
 
-###  Websites used for testing
-https://demo.applitools.com
-https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
-https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-https://freelance-learn-automation.vercel.app/login
 
-https://the-internet.herokuapp.com/upload  
-https://the-internet.herokuapp.com/
-https://docs.oracle.com/javase/8/docs/api/
+
 
 ## commands and statements
 
@@ -105,8 +123,37 @@ await context.close();
 It closes the entire browser context, which includes all the pages/tabs opened within it.
 Close all tabs and clean up everything for this browser profile."
 
+How to update to playwright to the latest version
+```
+npm install -D @playwright/test@latest
+```
 
+Playwright Important Commands
+npx playwright install
 
+Install Browsers manually.
+npx playwright test
+
+Runs the end-to-end tests.
+npx playwright test --ui
+
+Starts the interactive UI mode.
+npx playwright test --project=chromium
+
+Runs the tests only on Desktop Chrome.
+npx playwright test example
+
+Runs the tests in a specific file.
+npx playwright test --debug
+
+Runs the tests in debug mode.
+npx playwright codegen
+
+Auto generate tests with Codegen.
+We suggest that you begin by typing:
+```
+npx playwright test
+```
 viewportSize() for screen size
 
 retry can be used for sigle and group of tests.
@@ -151,6 +198,31 @@ test('loging with POM', async ({ page }) => {
     })
 
 ```
+
+### Git Commands
+
+```
+git init
+git status
+git add filename or git add .
+git commit -m "commit message"
+git log
+git branch -M main
+git branch 
+git remote add origin githubURL
+git push -u origin main
+```
+
+###  Websites used for testing
+
+https://demo.applitools.com
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+https://freelance-learn-automation.vercel.app/login
+https://the-internet.herokuapp.com/upload  
+https://the-internet.herokuapp.com/
+https://docs.oracle.com/javase/8/docs/api/
 
 
 ✍️ Author:

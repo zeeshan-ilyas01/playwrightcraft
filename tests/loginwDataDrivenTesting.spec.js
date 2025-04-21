@@ -22,4 +22,12 @@ test.describe("Data driven login Test",function(){
             })  
         })
     }
+     /*
+    for(const data of testdata){
+    async loginToAppWJsonData_Param() {
+
+        await this.page.fill(this.data.username)
+        await this.page.fill(this.data.password)
+        await this.page.click(this.loginbutton)
+    }*/
 })
