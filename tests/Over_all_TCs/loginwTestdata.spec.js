@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-import testdata from '../testdata.json' assert{type:'json'}
+import testdata from '../../testdata.json' assert{type:'json'}
 
 //const testdata = JSON.parse(JSON.stringify(require("../testdata.json")))
 
